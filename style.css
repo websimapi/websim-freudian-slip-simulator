@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.thoughts-container, .interaction-container, .slip-container {
+    margin-bottom: 30px;
+}
+
+.thoughts-box, .slip-box {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+.thoughts-box p, .slip-box p {
+    margin: 0;
+}
+
+#thoughtsDisplay {
+    color: #7f8c8d;
+    font-size: 1.1em;
+    min-height: 60px; /* Ensure space for thoughts */
+}
+
+textarea#userInput {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    min-height: 70px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button#speakButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button#speakButton:hover {
+    background-color: #2980b9;
+}
+
+button#speakButton:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+
+#slipDisplay {
+    font-weight: bold;
+    color: #c0392b;
+    font-size: 1.2em;
+}
+
+#loadingMessage {
+    text-align: center;
+    margin-top: 10px;
+    color: #888;
+}
+

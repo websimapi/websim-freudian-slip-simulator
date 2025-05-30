@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freudian Slip Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // It's important that this import map is defined before any an ES module script is declared.
+        // It's also important that the ES module script is declared with type="module".
+        // The import map below is a basic example. We can update it with CDNs of any ES module.
+        // const importMap = {
+        //   imports: {
+        //     "canvas-confetti": "https://cdn.skypack.dev/canvas-confetti"
+        //   }
+        // };
+        // if (HTMLScriptElement.supportsImportMaps) {
+        //   const im = document.createElement('script');
+        //   im.type = 'importmap';
+        //   im.textContent = JSON.stringify(importMap);
+        //   document.currentScript.after(im);
+        // }
+      </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Freudian Slip Simulator</h1>
+
+        <div class="thoughts-container">
+            <h2>Inner Monologue (Subconscious Thoughts):</h2>
+            <div id="thoughtsDisplay" class="thoughts-box">
+                <p>Thinking...</p>
+            </div>
+        </div>
+
+        <div class="interaction-container">
+            <h2>Your Intention:</h2>
+            <textarea id="userInput" placeholder="What do you want to say?"></textarea>
+            <button id="speakButton">Try to Say It</button>
+            <div id="loadingMessage" style="display: none;">Processing your slip...</div>
+        </div>
+
+        <div class="slip-container">
+            <h2>You Actually Said:</h2>
+            <div id="slipDisplay" class="slip-box">
+                <p>...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
